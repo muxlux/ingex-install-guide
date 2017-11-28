@@ -78,6 +78,7 @@ cd ../libMXF++
 cd ../bmx
 ./autogen.sh && ./configure && make && make check && sudo make install
 export webroot=/srv/www
+echo "export webroot=/srv/www" >> ~/.bashrc
 wget https://github.com/probonogeek/extjs/archive/4.1.1a.zip
 unzip extjs-4.1.1a.zip 
 sudo mkdir $webroot/htdocs/ingex
