@@ -15,6 +15,9 @@
      
 2. ATI graphics card
 3. raid0 mounted at /video
+
+## get source 
+
 ```
 mkdir ~/ap-workspace
 cd ~/ap-workspace
@@ -22,6 +25,9 @@ cvs -d:pserver:anonymous@ingex.cvs.sourceforge.net:/cvsroot/ingex login
 cvs -z3 -d:pserver:anonymous@ingex.cvs.sourceforge.net:/cvsroot/ingex co -P ingex
 export workspace=/home/ingex/ap-workspace/ingex
 echo "export workspace=/home/ingex/ap-workspace/ingex" >> ~/.bashrc
+```
+## get & install prerequisites
+```
 sudo zypper in libjpeg62-devel libbz2-devel portaudio-devel postgresql-server postgresql-devel libpqxx-devel libXerces-c-devel wxWidgets-devel libSDL-devel perl-CGI-Session perl-Clone perl-common-sense perl-DBD-Pg perl-DBI perl-JSON-XS perl-Linux-Inotify2 perl-Log-Dispatch perl-Log-Log4perl perl-Switch perl-Template-Toolkit perl-Text-Template perl-XML-Simple
 sudo cpan Filesys::DfPortable IPC::ShareLite Log::Handler PDF::Create Proc::Daemon Term::ANSIColor
 mkdir ~/rpms
@@ -44,7 +50,7 @@ sudo rpm -i *
 firefox -preferences #remake ~/Downloads the Download directory
 ```
 <log out & back in>
-Download Blackmagic Desktop Video drivers and SDK from https://www.blackmagicdesign.com/support/family/capture-and-playback
+Download Blackmagic Desktop Video and Decklink SDK from https://www.blackmagicdesign.com/support/family/capture-and-playback
 ```
 tar xf /home/ingex/Downloads/Blackmagic_Desktop_Video_Linux*
 tar xf /home/ingex/Downloads/Blackmagic_Decklink* -C /home/ingex
