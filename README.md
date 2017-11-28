@@ -21,14 +21,8 @@ cd ~/ap-workspace
 cvs -d:pserver:anonymous@ingex.cvs.sourceforge.net:/cvsroot/ingex login
 cvs -z3 -d:pserver:anonymous@ingex.cvs.sourceforge.net:/cvsroot/ingex co -P ingex
 export workspace=/home/ingex/ap-workspace/ingex
-```
-add 
-```
-export workspace=/home/ingex/ap-workspace/ingex
-```
-to ~/.bashrc
-```
-libjpeg62-devel libbz2-devel portaudio-devel postgresql-server postgresql-devel libpqxx-devel libXerces-c-devel wxWidgets-devel libSDL-devel perl-CGI-Session perl-Clone perl-common-sense perl-DBD-Pg perl-DBI perl-JSON-XS perl-Linux-Inotify2 perl-Log-Dispatch perl-Log-Log4perl perl-Switch perl-Template-Toolkit perl-Text-Template perl-XML-Simple
+echo "export workspace=/home/ingex/ap-workspace/ingex" >> ~/.bashrc
+sudo zypper in libjpeg62-devel libbz2-devel portaudio-devel postgresql-server postgresql-devel libpqxx-devel libXerces-c-devel wxWidgets-devel libSDL-devel perl-CGI-Session perl-Clone perl-common-sense perl-DBD-Pg perl-DBI perl-JSON-XS perl-Linux-Inotify2 perl-Log-Dispatch perl-Log-Log4perl perl-Switch perl-Template-Toolkit perl-Text-Template perl-XML-Simple
 sudo cpan Filesys::DfPortable IPC::ShareLite Log::Handler PDF::Create Proc::Daemon Term::ANSIColor
 mkdir ~/rpms
 cd ~/rpms
@@ -45,8 +39,7 @@ http://download.opensuse.org/repositories/devel:/libraries:/ACE:/micro/openSUSE_
 http://download.opensuse.org/repositories/devel:/libraries:/ACE:/micro/openSUSE_13.2/x86_64/tao-cosnaming-2.4.5-66.x86_64.rpm
 http://download.opensuse.org/repositories/devel:/libraries:/ACE:/micro/openSUSE_13.2/x86_64/tao-devel-2.4.5-66.x86_64.rpm
 ```
-<log out>
-#https://sourceforge.net/projects/ingex/files/1.0.0/prerequisites/opensuse_11.4_x86_64/ #additional rpms
+goto https://sourceforge.net/projects/ingex/files/1.0.0/prerequisites/opensuse_11.4_x86_64/ #additional rpms
 ```
 wget https://sourceforge.net/projects/ingex/files/1.0.0/prerequisites/opensuse_11.4_x86_64/codecs-for-ffmpeg-20081215-2.x86_64.rpm/download
 wget https://sourceforge.net/projects/ingex/files/1.0.0/prerequisites/opensuse_11.4_x86_64/ffmpeg-DNxHD-h264-aac-0.5-11.x86_64.rpm/download
@@ -55,6 +48,7 @@ sudo zypper in openssl-devel
 sudo rpm -i *
 #or sudo rpm -i codecs-for-ffmpeg-* ffmpeg-DNxHD-* shttpd-*
 ```
+<log out & back in>
 #Blackmagic card drivers and SDK” | unzip SDK to /home/ingex
 ```
 export BMD_HARDWARE_INCLUDE=/home/ingex/BlackmagicDeckLinkSDK/Linux/include
