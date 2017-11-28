@@ -49,7 +49,7 @@ sudo rpm -i *
 #or sudo rpm -i codecs-for-ffmpeg-* ffmpeg-DNxHD-* shttpd-*
 ```
 <log out & back in>
-# Download Blackmagic Desktop Video drivers and SDK from https://www.blackmagicdesign.com/support/family/capture-and-playback
+Download Blackmagic Desktop Video drivers and SDK from https://www.blackmagicdesign.com/support/family/capture-and-playback
 ```
 tar xf /home/ingex/Downloads/Blackmagic_Desktop_Video_Linux*
 tar xf /home/ingex/Downloads/Blackmagic_Decklink* -C /home/ingex
