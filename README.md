@@ -55,6 +55,7 @@ Download Blackmagic Desktop Video and Decklink SDK from https://www.blackmagicde
 tar xf /home/ingex/Downloads/Blackmagic_Desktop_Video_Linux*
 tar xf /home/ingex/Downloads/Blackmagic_Decklink* -C /home/ingex
 export BMD_HARDWARE_INCLUDE=/home/ingex/BlackmagicDeckLinkSDK/Linux/include
+echo "export BMD_HARDWARE_INCLUDE=/home/ingex/BlackmagicDeckLinkSDK/Linux/include" >> ~/.bashrc
 sudo zypper ar -f -n packman http://ftp.gwdg.de/pub/linux/misc/packman/suse/openSUSE_13.2/ packman
 sudo zypper refresh
 sudo zypper in dkms
