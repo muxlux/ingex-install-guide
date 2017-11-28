@@ -105,11 +105,15 @@ echo $AAFSDKINSTALL
 cd $workspace/YUVlib
 make
 sudo make install
+```
+## build ingex
+```
 cd $workspace
 sudo zypper in  libxtst-devel libxv-devel
 make
 ```
 :)
+## install ingex executables
 ```  
 cd $workspace/player/ingex_player
 sudo make install
