@@ -39,7 +39,7 @@ http://download.opensuse.org/repositories/devel:/libraries:/ACE:/micro/openSUSE_
 http://download.opensuse.org/repositories/devel:/libraries:/ACE:/micro/openSUSE_13.2/x86_64/tao-cosnaming-2.4.5-66.x86_64.rpm
 http://download.opensuse.org/repositories/devel:/libraries:/ACE:/micro/openSUSE_13.2/x86_64/tao-devel-2.4.5-66.x86_64.rpm
 ```
-goto https://sourceforge.net/projects/ingex/files/1.0.0/prerequisites/opensuse_11.4_x86_64/ #additional rpms
+
 ```
 wget https://sourceforge.net/projects/ingex/files/1.0.0/prerequisites/opensuse_11.4_x86_64/codecs-for-ffmpeg-20081215-2.x86_64.rpm/download
 wget https://sourceforge.net/projects/ingex/files/1.0.0/prerequisites/opensuse_11.4_x86_64/ffmpeg-DNxHD-h264-aac-0.5-11.x86_64.rpm/download
