@@ -13,8 +13,8 @@
      - firewall disabled
      - ssh enabled
      
-graphics drivers (Nvidia/AMD) *needs nvidia instructions*
-raid0 mounted at /video
+2. ATI graphics card
+3. raid0 mounted at /video
 ```
 mkdir ~/ap-workspace
 cd ~/ap-workspace
@@ -49,8 +49,10 @@ sudo rpm -i *
 #or sudo rpm -i codecs-for-ffmpeg-* ffmpeg-DNxHD-* shttpd-*
 ```
 <log out & back in>
-#Blackmagic card drivers and SDK” | unzip SDK to /home/ingex
+# Download Blackmagic Desktop Video drivers and SDK from https://www.blackmagicdesign.com/support/family/capture-and-playback
 ```
+tar xf /home/ingex/Downloads/Blackmagic_Desktop_Video_Linux*
+tar xf /home/ingex/Downloads/Blackmagic_Decklink* -C /home/ingex
 export BMD_HARDWARE_INCLUDE=/home/ingex/BlackmagicDeckLinkSDK/Linux/include
 sudo zypper ar -f -n packman http://ftp.gwdg.de/pub/linux/misc/packman/suse/openSUSE_13.2/ packman
 sudo zypper refresh
