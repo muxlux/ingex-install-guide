@@ -26,27 +26,22 @@ sudo zypper in libjpeg62-devel libbz2-devel portaudio-devel postgresql-server po
 sudo cpan Filesys::DfPortable IPC::ShareLite Log::Handler PDF::Create Proc::Daemon Term::ANSIColor
 mkdir ~/rpms
 cd ~/rpms
-```
-make ~/rpms directory for downloads in browser & open following urls:
-```
-http://download.opensuse.org/repositories/devel:/libraries:/ACE:/micro/openSUSE_13.2/x86_64/ace-6.4.5-66.x86_64.rpm
-http://download.opensuse.org/repositories/devel:/libraries:/ACE:/micro/openSUSE_13.2/x86_64/ace-devel-6.4.5-66.x86_64.rpm
-http://download.opensuse.org/repositories/devel:/libraries:/ACE:/micro/openSUSE_13.2/x86_64/ace-gperf-6.4.5-66.x86_64.rpm
-http://download.opensuse.org/repositories/devel:/libraries:/ACE:/micro/openSUSE_13.2/x86_64/ace-kokyu-6.4.5-66.x86_64.rpm
-http://download.opensuse.org/repositories/devel:/libraries:/ACE:/micro/openSUSE_13.2/x86_64/ace-xml-6.4.5-66.x86_64.rpm
-http://download.opensuse.org/repositories/devel:/libraries:/ACE:/micro/openSUSE_13.2/x86_64/mpc-6.4.5-66.x86_64.rpm
-http://download.opensuse.org/repositories/devel:/libraries:/ACE:/micro/openSUSE_13.2/x86_64/tao-2.4.5-66.x86_64.rpm
-http://download.opensuse.org/repositories/devel:/libraries:/ACE:/micro/openSUSE_13.2/x86_64/tao-cosnaming-2.4.5-66.x86_64.rpm
-http://download.opensuse.org/repositories/devel:/libraries:/ACE:/micro/openSUSE_13.2/x86_64/tao-devel-2.4.5-66.x86_64.rpm
-```
-
-```
+firefox -preferences #make ~/rpms the Download directory
+firefox http://download.opensuse.org/repositories/devel:/libraries:/ACE:/micro/openSUSE_13.2/x86_64/ace-6.4.5-66.x86_64.rpm
+firefox http://download.opensuse.org/repositories/devel:/libraries:/ACE:/micro/openSUSE_13.2/x86_64/ace-devel-6.4.5-66.x86_64.rpm
+firefox http://download.opensuse.org/repositories/devel:/libraries:/ACE:/micro/openSUSE_13.2/x86_64/ace-gperf-6.4.5-66.x86_64.rpm
+firefox http://download.opensuse.org/repositories/devel:/libraries:/ACE:/micro/openSUSE_13.2/x86_64/ace-kokyu-6.4.5-66.x86_64.rpm
+firefox http://download.opensuse.org/repositories/devel:/libraries:/ACE:/micro/openSUSE_13.2/x86_64/ace-xml-6.4.5-66.x86_64.rpm
+firefox http://download.opensuse.org/repositories/devel:/libraries:/ACE:/micro/openSUSE_13.2/x86_64/mpc-6.4.5-66.x86_64.rpm
+firefox http://download.opensuse.org/repositories/devel:/libraries:/ACE:/micro/openSUSE_13.2/x86_64/tao-2.4.5-66.x86_64.rpm
+firefox http://download.opensuse.org/repositories/devel:/libraries:/ACE:/micro/openSUSE_13.2/x86_64/tao-cosnaming-2.4.5-66.x86_64.rpm
+firefox http://download.opensuse.org/repositories/devel:/libraries:/ACE:/micro/openSUSE_13.2/x86_64/tao-devel-2.4.5-66.x86_64.rpm
 wget https://sourceforge.net/projects/ingex/files/1.0.0/prerequisites/opensuse_11.4_x86_64/codecs-for-ffmpeg-20081215-2.x86_64.rpm/download
 wget https://sourceforge.net/projects/ingex/files/1.0.0/prerequisites/opensuse_11.4_x86_64/ffmpeg-DNxHD-h264-aac-0.5-11.x86_64.rpm/download
 wget https://sourceforge.net/projects/ingex/files/1.0.0/prerequisites/opensuse_11.4_x86_64/ffmpeg-DNxHD-h264-aac-0.5-11.x86_64.rpm/download
 sudo zypper in openssl-devel
 sudo rpm -i *
-#or sudo rpm -i codecs-for-ffmpeg-* ffmpeg-DNxHD-* shttpd-*
+firefox -preferences #remake ~/Downloads the Download directory
 ```
 <log out & back in>
 Download Blackmagic Desktop Video drivers and SDK from https://www.blackmagicdesign.com/support/family/capture-and-playback
